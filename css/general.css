@@ -24,26 +24,20 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
 }
 
 .logo {
-  width: 30%;
+  width: 40%;
   max-width: 100%;
   height: auto;
 }
 
-.header_links {
-  color: black;
-  font-size: 15px;
-  padding-left: 0;
-}
-
 a {
-  color: black;
+  color: white;
+  /* text-decoration: underline; */
 }
 a:visited {
   color: black;
@@ -56,20 +50,23 @@ a:hover {
   background-color: var(--Header_and_footer_color);
   height: 100vh;
   width: 100%;
-  max-width: 350px;
+  max-width: 230px;
   position: fixed;
   top: 0;
   left: -450px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-top: 70px;
   text-align: left;
   font-size: 2rem;
   transition: 0.3s ease;
 }
 .off-screen-menu.active {
   left: 0;
+}
+
+.off-screen-menu li{
+    padding-bottom: 10px;
 }
 
 nav {
@@ -93,7 +90,7 @@ nav {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 350%);
   transition: 0.3s ease;
 }
 .ham-menu span:nth-child(1) {
@@ -107,12 +104,12 @@ nav {
 }
 .ham-menu.active span:nth-child(1) {
   top: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, 350%) rotate(45deg);
 }
 .ham-menu.active span:nth-child(2) {
   opacity: 0;
 }
 .ham-menu.active span:nth-child(3) {
   top: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, 350%) rotate(-45deg);
 }
