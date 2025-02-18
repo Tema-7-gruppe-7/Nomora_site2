@@ -1,0 +1,75 @@
+html {
+  --BG_color: #c0cfa8;
+  --Header_and_footer_color: #abbc90;
+  --Button_color: #ff9959;
+  --Button_text_color: #fff4f4;
+  --primary_font: "Borisna";
+  --margin_button_recepies: 15px;
+}
+
+body {
+  background-color: var(--BG_color);
+}
+
+/**************** Fonts ****************/
+@font-face {
+  font-family: "Borisna";
+  src: url(../fonts/Borisna.woff);
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url(../fonts/Aleo-Regular.woff);
+}
+
+/****************** Card ******************/
+
+h1 {
+  text-align: center;
+  font-family: "Borisna";
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 30px;
+  margin-top: 50px;
+}
+
+.grid_1-1 img {
+  width: 100%;
+  background-color: var(--Button_text_color);
+  padding-bottom: 90px;
+  border-radius: 20px;
+}
+
+.grid_1-1 p {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  margin-top: 190px;
+  font-family: "Aleo";
+}
+
+.grid_1-1 img:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.grid_1-1 a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  color: var(--Button_text_color);
+  background-color: var(--Button_color);
+  margin: 0;
+  margin-top: 225px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px;
+}
