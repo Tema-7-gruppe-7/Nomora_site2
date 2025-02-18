@@ -1,4 +1,3 @@
-
 html {
   --BG_color: #c0cfa8;
   --Header_and_footer_color: #abbc90;
@@ -27,6 +26,7 @@ body {
 h1 {
   font-family: "Borisna";
   font-size: 80px;
+  font-weight: 100;
   color: white;
   text-align: center;
   top: 27%;
@@ -43,104 +43,211 @@ h1 {
   margin-top: 20px;
 }
 
+@media (width > 630px) {
+  h1 {
+    font-size: 110px;
+    font-weight: 100;
+  }
+
+  .hero_section {
+    height: 350px;
+  }
+}
+
+@media (width > 1400px) {
+  h1 {
+    font-size: 150px;
+    font-weight: 100;
+  }
+
+  .hero_section {
+    height: 500px;
+  }
+}
+
 /****************** Top dishes of the year *************/
 
-h2{
-    text-align: center;
-    font-family: "Borisna";
-    font-size: 40px;
+h2 {
+  text-align: center;
+  font-family: "Borisna";
+  font-size: 40px;
 }
 
-.grid_1-1-1-1-1{
+.grid_1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 140px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.grid_1-1-1-1-1 img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+}
+
+.grid_1-1-1-1-1 img:nth-child(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  height: 100%;
+}
+
+.grid_1-1-1-1-1 p {
+  grid-column: 1/3;
+  font-family: "Aleo";
+}
+
+@media (width > 630px) {
+  .grid_1-1-1-1-1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-bottom: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+  }
 
-.grid_1-1-1-1-1 img{
+  .grid_1-1-1-1-1 img {
     object-fit: cover;
     width: 100%;
-    border-radius: 10px;
-    margin-top: 10px;
-    border: none;
-}
-
-.grid_1-1-1-1-1 img:nth-child(1){
-    grid-column: 1/2;
-    grid-row: 1/2;
     height: 100%;
-}
-
-.grid_1-1-1-1-1 p{
-    grid-column: 1/3;
-    font-family: "Aleo";
-}
-
-
-@media (width > 830px) {
-    
-    .grid_1-1-1-1-1 img{
-        object-fit: cover;
-        width: 100%;
-        border-radius: 10px;
-    }
-    
-    .grid_1-1-1-1-1 p{
-        grid-column: 3/6;
-        grid-row: 1/2;
-    }
-    
-    .grid_1-1-1-1-1 img:nth-child(4){
-        grid-column: 5/6;
-    }
-    
-    .grid_1-1-1-1-1 img:nth-child(3){
-        grid-column: 4/5;
-    }
-    
-    .grid_1-1-1-1-1 img:nth-child(2){
-        grid-column: 3/4;
-    }
-    
-    .grid_1-1-1-1-1 img:nth-child(1){
-        grid-column: 1/3;
-        grid-row: 1/3;
-        height: 100%;
-    }
+    border-radius: 10px;
+    margin: 0;
   }
 
-  /****************** About us section ****************/
-
-  .about_us{
-    background-color: var(--Button_color);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 90px;
-    gap: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .about_us img{
-    width: 100%;
-    height: 92%;
-    border-radius: 30px;
-  }
-
-  .about_us h2{
-    grid-column: 1/3;
+  .grid_1-1-1-1-1 p {
+    grid-column: 3/6;
     grid-row: 1/2;
-    text-align: center;
-    margin-top: 15px;
+    margin: 0 30px;
+    margin-top: 10px;
   }
 
-  .about_us p{
+  .grid_1-1-1-1-1 img:nth-child(4) {
+    grid-column: 5/6;
+  }
+
+  .grid_1-1-1-1-1 img:nth-child(3) {
+    grid-column: 4/5;
+  }
+
+  .grid_1-1-1-1-1 img:nth-child(2) {
+    grid-column: 3/4;
+  }
+
+  .grid_1-1-1-1-1 img:nth-child(1) {
     grid-column: 1/3;
-    grid-row: 2/3;
-    text-align: center;
-    margin-bottom: 15px;
+    grid-row: 1/3;
+  }
+}
+
+@media (width > 750px) {
+  .grid_1-1-1-1-1 img:nth-child(1) {
+    padding-bottom: 10%;
+  }
+}
+
+@media (width > 1400px) {
+  h2 {
+    font-size: 60px;
   }
 
+  .grid_1-1-1-1-1 {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .grid_1-1-1-1-1 p {
+    margin-right: 150px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+}
+
+/****************** About us section ****************/
+
+.about_us {
+  background-color: var(--Button_color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 90px;
+  gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about_us img {
+  width: 100%;
+  height: 92%;
+  border-radius: 30px;
+}
+
+.about_us h2 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.about_us p {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Aleo";
+}
+
+@media (width > 630px) {
+  .about_us {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr;
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about_us img:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+
+  .about_us img:nth-child(2) {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  .about_us h2 {
+    grid-column: 2/3;
+    padding-top: 30px;
+    font-size: 50px;
+  }
+
+  .about_us p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .about_us img {
+    margin-top: 30px;
+  }
+}
+
+@media (width > 1400px) {
+  .about_us {
+    column-gap: 0;
+  }
+
+  .about_us h2 {
+    font-size: 50px;
+  }
+
+  .about_us img {
+    width: 60%;
+    margin-left: 25%;
+  }
+
+  .about_us p {
+    font-size: 20px;
+  }
+}
