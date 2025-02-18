@@ -25,7 +25,7 @@ body {
 
 h1 {
   font-family: "Borisna";
-  font-size: 80px;
+  font-size: 100px;
   font-weight: 100;
   color: white;
   text-align: center;
@@ -34,7 +34,7 @@ h1 {
 }
 
 .hero_section {
-  background-image: url(../img/Food_picture.png);
+  background-image: url(../img/Hero_Section.png);
   background-size: cover;
   background-position: center;
   height: 200px;
