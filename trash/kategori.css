@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Borisna&display=swap');
+  
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
+    --primary: #c0cfa8;
+    --secondary: #ef802c;
+    --tertiary: #fff4f4;
+    --main-font: #2c2e2b;
+}
+body {
+    margin: 0;
+    font-family: 'Borisna', serif;
+    background-color: #D4E4C6;
+    color: #333;
+}
+.category-container {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 30px;
+    text-align: center;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+.banner {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden; /* Ensures the image doesn’t overflow */
+}
+.banner h1 {
+    color: white;
+    font-size: 70px;
+    padding: 30px 30px;
+    border-radius: 8px;
+    position: absolute;
+    top: 60px;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr; /* Standard for mobil */
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer; /* Gør det tydeligt, at det er en knap */
+    transition: transform 0.2s ease-in-out;
+}
+.category:hover {
+    transform: scale(1.05); /* Lidt større ved hover */
+}
+
+.category img {
+    width: 170px;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category span {
+    font-family: 'Borisna', serif;
+    font-size: 20px;
+    color: #E76F51;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+
+/* Hover-effekt */
+.category:hover span {
+    color: #F4A261;
+}
+
+.category:hover img {
+    transform: scale(1.1); /* Gør billedet større ved hover */
+}
+
+.category button:hover {
+    color: #F4A261;
+    transform: scale(1.1); /* Knap bliver lidt større */
+    text-decoration: none;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+}
+       /* Responsive Layout */
+       @media (min-width: 768px) {
+        .categories {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (min-width: 1024px) {
+        .categories {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .banner {
+            height: 500px;
+        }
+        .banner h1 {
+            font-size: 56px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .banner h1 {
+            font-size: 120px; /* Gør det meget stort på computer */
+        }
+    }
