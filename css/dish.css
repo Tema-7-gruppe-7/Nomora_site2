@@ -1,0 +1,223 @@
+/* Main container */
+.food-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  border-radius: 10px;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Food Title */
+.food-title {
+  font-family: "Borisna";
+  font-size: 160px;
+  font-weight: 400;
+  color: var(--Button_text_color);
+  text-align: left;
+  max-width: 40%;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Food Image */
+.food-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+/* Information Section */
+.information-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 4rem;
+}
+
+.container-instruction,
+.container-ingredients {
+  background: var(--Button_text_color, #f8f8f8);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Instruction & Ingredients Section */
+.container-instruction h1,
+.container-ingredients h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}
+
+.container-instruction p {
+  line-height: 1.6;
+}
+
+.container-instruction ul,
+li {
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+/* .container-instruction,
+.container-ingridents {
+  flex: 1;
+} */
+
+h1 {
+  color: var(--main-font);
+  font-size: 1.8rem;
+  font-family: "Borisna";
+  text-align: center;
+}
+
+ol {
+  margin-left: 20px;
+  padding: 1.5rem;
+}
+
+/* INGREDIENTS */
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+  padding: 1.5rem;
+}
+
+p,
+ul,
+li {
+  font-family: "Aleo Regular";
+  color: var(--main-font);
+}
+
+/* RATING */
+.rating-section {
+  background-color: var(--Button_color);
+  padding: 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stars {
+  cursor: pointer;
+  color: gray;
+}
+
+.stars span {
+  font-size: 70px;
+}
+
+.stars span:hover,
+.stars span.active {
+  color: gold;
+}
+
+/* Rating Icon */
+.icon {
+  width: 80px;
+  height: 100px;
+  margin-left: 10px;
+}
+
+/* Rating Container */
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  font-size: 30px;
+  font-family: "Aleo Regular";
+}
+
+.rating-text {
+  font-size: 40px;
+  font-family: "Borisna";
+}
+
+/* Divider */
+.divider {
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  margin: 15px auto;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .food-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .food-title {
+    font-size: 2.5rem;
+  }
+
+  .food-image {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .information-section {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 2rem;
+  }
+
+  .container-instruction,
+  .container-ingredients {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  ol,
+  ul {
+    padding: 1rem;
+  }
+
+  .stars span {
+    font-size: 40px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 70px;
+  }
+
+  .rating-text {
+    font-size: 26px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  .stars span {
+    font-size: 35px;
+  }
+
+  .rating-text {
+    font-size: 22px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  .divider {
+    width: 90%;
+  }
+}
