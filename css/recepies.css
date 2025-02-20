@@ -1,6 +1,6 @@
 html {
-  --BG_color: #c0cfa8;
-  --Header_and_footer_color: #abbc90;
+  --BG_color: #dde2d5;
+  --Header_and_footer_color: #78875f;
   --Button_color: #ff9959;
   --Button_text_color: #fff4f4;
   --primary_font: "Borisna";
@@ -31,15 +31,15 @@ h1 {
   font-size: 50px;
 }
 
-.grid_1-1 {
+.recipe_list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   margin: 0 30px;
   margin-top: 50px;
 }
 
-.grid_1-1 img {
+.recipe_list img {
   width: 100%;
   background-color: var(--Button_text_color);
   padding-bottom: 90px;
@@ -50,16 +50,16 @@ h1 {
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: center;
-  margin-top: 190px;
+  margin-top: 90px;
   font-family: "Aleo";
 }
 
-.grid_1-1 img:nth-child(1) {
+.recipe_list img:nth-child(1) {
   grid-column: 1/2;
   grid-row: 1/2;
 }
 
-.grid_1-1 a {
+.recipe_list a {
   grid-column: 1/2;
   grid-row: 1/2;
   color: var(--Button_text_color);
