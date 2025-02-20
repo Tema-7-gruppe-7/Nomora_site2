@@ -6,51 +6,22 @@ fetch(`https://dummyjson.com/recipes?limit=100`)
   .then((response) => response.json())
   .then(showList);
 
-function showList(products) {
-  console.log(products);
+function showList(recipes) {
+  console.log(recipes);
 
   let markup = "";
 
-  products
-    .map((product) => {
+  recipes.recipes
+    .map((recipe) => {
       markup += `
-        <h1>Recepies</h1>
         <div class="grid_1-1">
-            <img src="https://cdn.dummyjson.com/recipe-images/${recipes.id}.webp" alt="Dish">
-            <p>${recipes.name}</p>
-            <a href="#" class="button">Go to recepie</a>
+            <img src="https://cdn.dummyjson.com/recipe-images/${recipe.id}.webp" alt="Dish">
+            <p>${recipe.name}</p>
+            <a href="dish.html?id=${recipe.id}" class="button">Go to recepie</a>
         </div>`;
     })
     .join("");
 
   console.log(markup);
   listContainer.innerHTML = markup;
-}
-
-console.log("script hentet");
-
-const div = document.querySelector(".recepies_list");
-fetch("https://dummyjson.com/recipes?limit=100")
-  .then((res) => res.json())
-  .then(console.log);
-
-function showList(recipes) {
-  console.log(recipes);
-
-  let markup = "";
-
-  recipes
-    .map((recipes) => {
-      markup += `
-      <h1>Recepies</h1>
-        <div class="grid_1-1">
-            <img src="https://cdn.dummyjson.com/recipe-images/${recipes.id}.webp" alt="Dish">
-            <p>${recipes.name}</p>
-            <a href="#" class="button">Go to recepie</a>
-        </div>
-        `;
-    })
-    .join("");
-  console.log(markup);
-  div.innerHTML = markup;
 }
