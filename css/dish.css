@@ -14,7 +14,7 @@
   font-family: "Borisna";
   font-size: 160px;
   font-weight: 400;
-  color: var(--Button_text_color);
+  color: black;
   text-align: left;
   max-width: 40%;
   margin: 0;
@@ -62,7 +62,6 @@ li {
 }
 
 h1 {
-  color: var(--main-font);
   font-size: 1.8rem;
   font-family: "Borisna";
   text-align: center;
@@ -89,7 +88,6 @@ p,
 ul,
 li {
   font-family: "Aleo";
-  color: var(--main-font);
 }
 
 /* RATING */
