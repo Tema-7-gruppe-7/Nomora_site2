@@ -1,8 +1,6 @@
 /* API */
 let mainDishId = new URLSearchParams(window.location.search).get("mainDish");
 
-console.log("Extracted mainDishId:", mainDishId);
-
 if (!mainDishId) {
   console.warn("Warning: No mainDishId found in URL. Defaulting to 1.");
   mainDishId = 1;
@@ -10,21 +8,20 @@ if (!mainDishId) {
 
 let mainDishElement = document.querySelector(".mainDish");
 
+const myDish = new URLSearchParams(window.location.search).get("id");
+
 if (!mainDishElement) {
   console.error("Error: <main> element not found.");
 } else {
-  fetch("https://dummyjson.com/recipes")
+  fetch("https://dummyjson.com/recipes/${myDish}")
     .then((res) => res.json())
     .then((data) => {
-      console.log("API Response:", data);
-
       if (!data || !data.recipes) {
         console.error("Error: API response does not contain recipes.");
         return;
       }
 
       let recipe = data.recipes.find((r) => r.id == mainDishId);
-      console.log("Recipe:", recipe);
 
       if (!recipe) {
         console.error("Error: Recipe not found.");
