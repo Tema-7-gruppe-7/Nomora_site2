@@ -6,8 +6,8 @@
 }
 
 html {
-  --BG_color: #c0cfa8;
-  --Header_and_footer_color: #abbc90;
+  --BG_color: #dde2d5;
+  --Header_and_footer_color: #78875f;
   --Button_color: #ff9959;
   --Button_text_color: #fff4f4;
   --primary_font: "Borisna";
@@ -133,10 +133,11 @@ footer {
   background-color: var(--Header_and_footer_color);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
+  padding: 2rem;
   font-size: 11px;
   text-align: center;
   max-width: 100%;
+  color: #eff2ea;
 }
 
 footer img {
