@@ -46,11 +46,11 @@ h1 {
   border-radius: 20px;
 }
 
-.grid_1-1 p {
+p {
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: center;
-  margin-top: 90px;
+  margin-top: -90px;
   font-family: "Aleo";
 }
 
@@ -72,4 +72,15 @@ h1 {
   text-align: center;
   border-radius: 20px;
   padding: 5px;
+}
+
+/********* filter ********/
+
+#countryFilter{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #ff9959;
+    font-family: "Aleo";
 }
