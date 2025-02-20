@@ -49,9 +49,7 @@ a {
   margin: 10px;
   margin-left: 33px;
 }
-a:visited {
-  color: black;
-}
+
 a:hover {
   text-decoration: underline;
 }
