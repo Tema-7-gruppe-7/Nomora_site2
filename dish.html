@@ -3,33 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dish</title>
     <link rel="stylesheet" href="./css/dish.css" />
     <link rel="stylesheet" href="./css/general.css" />
+    <link rel="icon" type="favicon-32x32" sizes="32x32" href="img/favicon.png" />
   </head>
   <!-- HEADER -->
-  <header>
-    <nav>
-      <div class="off-screen-menu">
-        <ul>
-          <li><a href="Recepies.html">Recepies</a></li>
-          <li><a href="about_us.html">About us</a></li>
-        </ul>
-      </div>
-      <div class="ham-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <a href="index.html"
-        ><img class="logo" src="img/logo.png" alt="Logo"
-      /></a>
-    </nav>
-  </header>
-  <!-- MAIN -->
   <body>
-    <div class="mainDish">
-      <!-- <div class="food-container">
+    <header>
+      <nav>
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="Recepies.html">Recepies</a></li>
+            <li><a href="about_us.html">About us</a></li>
+          </ul>
+        </div>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="Logo" /></a>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div class="mainDish">
+        <!-- <div class="food-container">
         <h1 class="food-title">FOOD NAME</h1>
         <img class="food-image" src="imgs/foodtest.jpg" />
       </div>
@@ -68,31 +68,27 @@
           </p>
         </div>
       </div> -->
-    </div>
-
-    <div class="rating-section">
-      <p>Rate this recipe:</p>
-      <div class="stars" id="starRating">
-        <span data-value="1">★</span>
-        <span data-value="2">★</span>
-        <span data-value="3">★</span>
-        <span data-value="4">★</span>
-        <span data-value="5">★</span>
       </div>
 
-      <div class="divider"></div>
+      <div class="rating-section">
+        <p>Rate this recipe:</p>
+        <div class="stars" id="starRating">
+          <span data-value="1">★</span>
+          <span data-value="2">★</span>
+          <span data-value="3">★</span>
+          <span data-value="4">★</span>
+          <span data-value="5">★</span>
+        </div>
 
-      <h2>Reviewers</h2>
-      <div class="rating-container">
-        <span id="ratingValue">0</span>
-        <img
-          class="icon"
-          src="img/icon1.png"
-          alt="Rolling pin and spoon icon"
-        />
+        <div class="divider"></div>
+
+        <h2>Reviewers</h2>
+        <div class="rating-container">
+          <span id="ratingValue">0</span>
+          <img class="icon" src="img/icon1.png" alt="Rolling pin and spoon icon" />
+        </div>
       </div>
-    </div>
-
+    </main>
     <footer>
       <div>
         <h3>Contact information</h3>
@@ -112,7 +108,7 @@
         <p class="CTA_footer">Chicken Alfredo Pasta</p>
       </div>
     </footer>
+    <script src="./js/dishapi.js"></script>
+    <script src="./js/general.js"></script>
   </body>
-  <script src="./js/dishapi.js"></script>
-  <script src="./js/general.js"></script>
 </html>
