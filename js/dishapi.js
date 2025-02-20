@@ -2,11 +2,6 @@
 let mainDishId = new URLSearchParams(window.location.search).get("id");
 let fetchURL;
 
-if (!mainDishId) {
-  console.warn("Warning: No mainDishId found in URL. Defaulting to 1.");
-  mainDishId = 1;
-}
-
 let mainDishElement = document.querySelector(".mainDish");
 
 if (!mainDishElement) {

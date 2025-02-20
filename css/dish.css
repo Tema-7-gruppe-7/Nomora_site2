@@ -39,14 +39,6 @@
   padding: 3rem;
 }
 
-.container-instruction,
-.container-ingredients {
-  background: var(--Button_text_color);
-  padding: 3rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Instruction & Ingredients Section */
 .container-instruction h1,
 .container-ingredients h1 {
