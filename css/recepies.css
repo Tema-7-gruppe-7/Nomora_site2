@@ -42,15 +42,18 @@ h1 {
 .recipe_list img {
   width: 100%;
   background-color: var(--Button_text_color);
-  padding-bottom: 90px;
+  padding-bottom: 120px;
   border-radius: 20px;
+  margin-bottom: 100px;
+  margin-top: 45px;
 }
 
-p {
+.recipe_list p {
   grid-column: 1/2;
   grid-row: 1/2;
   text-align: center;
-  margin-top: -90px;
+  margin-top: -200px;
+  margin-bottom: 15px;
   font-family: "Aleo";
 }
 
@@ -65,22 +68,19 @@ p {
   color: var(--Button_text_color);
   background-color: var(--Button_color);
   margin: 0;
-  margin-top: 225px;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 20px;
   text-align: center;
   border-radius: 20px;
-  padding: 5px;
+  padding: 9px;
+  margin-left: 55px;
 }
 
 /********* filter ********/
 
-#countryFilter{
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    padding: 10px;
-    background-color: #ff9959;
-    font-family: "Aleo";
+#countryFilter {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #ff9959;
+  font-family: "Aleo";
 }
